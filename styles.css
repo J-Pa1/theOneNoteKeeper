@@ -10,6 +10,7 @@
 .note-card {
     padding: 3%;
     text-align: center;
+    margin: 10px;
 }
 .header{
     margin: 3%;
@@ -19,4 +20,7 @@
     border-style: solid;
     border-radius: 5%;
     padding: 10% 0;
+}
+.btn-container{
+    margin-top: 10px
 }
