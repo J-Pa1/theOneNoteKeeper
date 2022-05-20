@@ -1,0 +1,22 @@
+.display-title{
+    font-size: large;
+}
+.display-note {
+    font-size: medium;
+}
+.display-date {
+    font-size: small;
+}
+.note-card {
+    padding: 3%;
+    text-align: center;
+}
+.header{
+    margin: 3%;
+    border-bottom-style: solid;
+}
+.new-note{
+    border-style: solid;
+    border-radius: 5%;
+    padding: 10% 0;
+}

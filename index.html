@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap CDN CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>NoteOne</title>
+</head>
+<body onload="displayNotes()">
+
+    <div class="container header">
+        <h1>The Note One</h1>
+        <div class="container">
+            <p>One place for managing all your notes</p>
+        </div>    
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <div class="container">
+                    <h2>Your Notes</h2>
+                    <div class="container" id="notes-container">
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="container new-note">
+                    <h2>Add Note</h2>
+                    <form class="container">
+                        <div class="form-group">
+                            <label for="title">Title</label>
+                            <input class="form-control" id="title">
+                        </div>
+                        <div class="form-group">
+                            <label for="note">Note</label>
+                            <textarea class="form-control" id="note" rows="3" placeholder="<optional>"></textarea>
+                        </div>
+                        <div>
+                            <a class="btn btn-outline-primary" onclick="addNote()">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+                                </svg>
+                                <span>Add</span>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
